@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Finan - finanças pessoais</title>
+
+  </head>
+  <body>
+
+    <div class="container col-12">
+
+       <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+
+        <!-- LOGO (navbar-brand define como logo) !-->
+        <a href="index.html" class="navbar-brand">
+          <i class="fas fa-dollar-sign "></i>
+        Finans</a>
+
+        <!-- MENU HAMBURGUER, PARA TELAS PEQUENAS !-->
+        <button class="navbar-toggler" data-toggle="collapse"
+        data-target="#nav-target">
+        <!-- o data target serve para eu colocar oque eu quero
+            abrir no botão, devo passar o id nele que sera
+            o mesmo id que eu devo colocar no local que eu quero
+            mostrar! 
+            ao pressionar o botao acima
+            ele ira mostrar oque tem na div de mesmo id-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+         <!-- NAVEGAÇÃO 
+            com a classe colapse ela ira esconder
+            os conteudos de dentro dela e só ira
+            mostrar (no caso do sm) se a pessoa clicar
+            no botao de hamburguer, mas para isso
+            eu devo colocar na div como navbar-collapse tmb!-->
+        <div class="collapse navbar-collapse" id="nav-target">
+            <ul class="navbar-nav ml-auto">
+              <button class="btn btn-outline-success mr-2">Entrar</button>
+                    <li class="nav-item">
+                         <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="modulo_de_despesas/insere.html" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="precos.html" class="nav-link">Preços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+            </ul>
+            <!-- Formulario -->
+                    <form class="form-inline">
+                        <input class="d-none d-md-block ml-4 mr-4" type="text" class="form-control" placeholder="pesquisar...">
+                        <button class="btn btn-outline-success d-none d-md-block">ok</button>
+                    </form>  
+
+        </div>
+
+                  
+    </nav>
+
+      
+
+
+       <section id="home">
+         <div class="container">
+           <div class="row">
+                <div class="col-md-7 d-flex">
+
+                  <div class="align-self-center">
+                    <div class="jumbotron bg-warning">
+       <div class="container">
+
+          <h1 class="display-4">Suas contas, descomplicadas.</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat.</p>
+          <div class="row col-md-12">
+              <div class="row col-md-9">
+                <input  class="form-control" type="email" placeholder="Seu e-mail" >
+                
+              </div>
+                <div class="row col-md-2">
+                  <a class="btn btn-primary " href="#">Cadastre-se</a>
+                </div>
+                
+                           
+          </div>
+              <div class="row pt-2">
+                    <p>Disponível para 
+                      <button class="btn btn-outline-success btn-lg">
+                        <i class="fab fa-android fa-lg"></i>
+                      </button>
+
+                      <button class="btn btn-outline-light btn-lg">
+                       <i class="fab fa-apple fa-lg"></i>
+                      </button>
+                    
+                    
+                </p>
+                </div>
+       </div>
+                  </div>
+             
+                </div>
+                <!-- Setando none para dispositivos pequenos nao visualizarem a fotos, basicamente para telas md eu deixei block -->
+             <div class="col-md-6 d-none d-md-block">
+               <img src="img/capa-mulher.png">
+             </div>
+           </div>
+         </div>
+       </section> <!-- FIM DA SEÇÃO HOME -->
+      
+      <section class="caixa"><!-- INICIO SEÇÃO SAIBA -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <div class="align-self-center">
+                <h2>Saiba para onde vai o seu dinheiro</h2>
+                <p>
+                  com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro
+                </p>
+                <a href="" class="btn btn-primary">Veja mais...</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- O img-fluid deixa a imagem fluida,
+              fazendo ela caber na div "mae" -->
+             <img src="img/saiba.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section><!--FIM SEÇÃO SAIBA -->
+
+      <section class="caixa"><!-- INICIO SEÇÃO JUROS -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- O img-fluid deixa a imagem fluida,
+              fazendo ela caber na div "mae" -->
+             <img src="img/juros.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex">
+              <div class="align-self-center">
+                <h2>Pare de pagar juros, economize!</h2>
+                <p>
+                  Manter as contas em dia é sempre um problema? O Finans
+                  avisa você: receba aleras de contas a pagar e a receber!
+                </p>
+                <a href="" class="btn btn-primary">Veja mais...</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section><!--FIM SEÇÃO JUROS -->
+
+      <section class="caixa"><!-- INICIO SEÇÃO RECURSOS -->
+        <div class="container">
+          <div class="row">
+            <!-- Como o grid tem 12 colunas, usando 3 grids de
+            tamanho 4 eu totalizo as 12 colunas !-->
+              <div class="col-md-4">
+                 <img src="img/facil.png" class="img-fluid">
+                  <h4>Fácil de usar</h4>
+                     <p>
+                       O Finans vai além do básico e permite que 
+                       você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!
+                     </p>
+              </div>
+              <div class="col-md-4">
+                  <img src="img/economize.png" class="img-fluid">
+                  <h4>Economize seu tempo</h4>
+                     <p>
+                       O Finans vai além do básico e permite que 
+                       você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!
+                     </p>
+              </div>
+              <div class="col-md-4">
+                  <img src="img/suporte.png" class="img-fluid">
+                  <h4>Suporte amigo</h4>
+                     <p>
+                       O Finans vai além do básico e permite que 
+                       você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!
+                     </p>
+              </div>
+            </div>
+          </div>
+        
+      </section><!--FIM SEÇÃO RECURSOS -->
+    
+
+      <footer class="mt-4 mb-4">
+        <div class="container">
+          <div class="row">
+                <div class="col-md-8">
+                    <p>
+                      <a href="">Home</a>
+                      <a href="">Recursos</a>
+                      <a href="">Beneficios</a>
+                      <a href="">Preços</a>
+                    </p>
+                </div>
+                   <div class="col-md-4 d-flex justify-content-end">
+                      <button class="btn btn-outline-primary btn-lg ml-2">
+                              <i class="fab fa-facebook fa-lg"></i>
+                      </button>
+                      <button class="btn btn-outline-primary btn-lg ml-2">
+                              <i class="fab fa-twitter fa-lg"></i>
+                      </button>
+                      <button class="btn btn-outline-danger btn-lg ml-2">
+                              <i class="fab fa-youtube fa-lg "></i>
+                      </button>
+                       <button class="btn btn-outline-danger btn-lg ml-2">
+                              <i class="fab fa-instagram fa-lg"></i>
+                      </button>
+                  </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
